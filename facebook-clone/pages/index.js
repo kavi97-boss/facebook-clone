@@ -17,6 +17,7 @@ export default function Home() {
                     <div className="inner-win">
                         <h2>Login</h2>
                         <input type="text" />
+                        <input type="submit" value="Submit" />
                     </div>
                 </div>
             </div>
