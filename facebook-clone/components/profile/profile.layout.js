@@ -1,0 +1,37 @@
+import NavBar from './NavBar';
+
+function ProfileLayout({ children }) {
+    return (
+        <div className="profile-page">
+            <div className="header">
+                <div className="inner">
+                    <div
+                        className="cover-image"
+                        style={{
+                            backgroundImage:
+                                'url(https://wallpaperaccess.com/full/1094090.jpg)',
+                        }}
+                    ></div>
+                    <div className="profile-pic-line">
+                        <div className="profile-pic-name">
+                            <div
+                                className="profile-pic"
+                                style={{
+                                    backgroundImage:
+                                        'url(https://www.pngall.com/wp-content/uploads/5/Profile-Transparent.png)',
+                                }}
+                            ></div>
+                            <h1>Jim Moriarty</h1>
+                        </div>
+                    </div>
+                    <NavBar />
+                </div>
+            </div>
+            <div className="body">
+                <div className="inner">{children}</div>
+            </div>
+        </div>
+    );
+}
+
+export default ProfileLayout;

@@ -1,0 +1,105 @@
+$innerWidth: 1200px;
+$headerHeight: 650px;
+
+body {
+    --bg-color: rgb(255, 255, 255);
+    --txt-color: rgb(0, 0, 0);
+}
+
+.profile-page {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    * {
+        color: var(--txt-color);
+    }
+    .header {
+        width: 100%;
+        height: $headerHeight;
+        display: flex;
+        justify-content: center;
+        .inner {
+            max-width: $innerWidth;
+            width: $innerWidth;
+            height: 100%;
+            .cover-image {
+                width: 100%;
+                height: 400px;
+                background-position: center center;
+                background-size: cover;
+                border-radius: 0 0 15px 15px;
+            }
+            .profile-pic-line {
+                width: 100%;
+                height: 200px;
+                padding: 10px;
+                display: flex;
+                .profile-pic-name {
+                    display: flex;
+                    .profile-pic {
+                        width: 180px;
+                        height: 180px;
+                        border-radius: 50%;
+                        background-position: center center;
+                        background-size: cover;
+                    }
+                    h1 {
+                        margin-top: 20px;
+                        margin-left: 40px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+    .body {
+        width: 100%;
+        min-height: 100vh;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        .inner {
+            max-width: $innerWidth;
+            width: $innerWidth;
+            height: 100%;
+            padding: 10px;
+        }
+    }
+}
+
+.profile-nav-bar {
+    width: 100%;
+    height: 50px;
+    ul {
+        display: flex;
+        list-style: none;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        border-bottom: 1px solid rgb(238, 238, 238);
+        li {
+            padding: 0 20px;
+            position: relative;
+            a {
+                font-size: 2vh;
+                color: black;
+                text-decoration: none;
+            }
+        }
+        $activeNavColor: #1877f2;
+        .active::before {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background-color: $activeNavColor;
+        }
+        .active {
+            a {
+                color: $activeNavColor;
+            }
+        }
+    }
+}

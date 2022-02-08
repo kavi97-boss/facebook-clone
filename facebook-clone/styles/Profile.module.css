@@ -1,0 +1,131 @@
+body {
+  --bg-color: rgb(255, 255, 255);
+  --txt-color: rgb(0, 0, 0);
+}
+
+.profile-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.profile-page * {
+  color: var(--txt-color);
+}
+
+.profile-page .header {
+  width: 100%;
+  height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile-page .header .inner {
+  max-width: 1200px;
+  width: 1200px;
+  height: 100%;
+}
+
+.profile-page .header .inner .cover-image {
+  width: 100%;
+  height: 400px;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 0 0 15px 15px;
+}
+
+.profile-page .header .inner .profile-pic-line {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-page .header .inner .profile-pic-line .profile-pic-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-page .header .inner .profile-pic-line .profile-pic-name .profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
+}
+
+.profile-page .header .inner .profile-pic-line .profile-pic-name h1 {
+  margin-top: 20px;
+  margin-left: 40px;
+  font-weight: 500;
+}
+
+.profile-page .body {
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile-page .body .inner {
+  max-width: 1200px;
+  width: 1200px;
+  height: 100%;
+  padding: 10px;
+}
+
+.profile-nav-bar {
+  width: 100%;
+  height: 50px;
+}
+
+.profile-nav-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.profile-nav-bar ul li {
+  padding: 0 20px;
+  position: relative;
+}
+
+.profile-nav-bar ul li a {
+  font-size: 2vh;
+  color: black;
+  text-decoration: none;
+}
+
+.profile-nav-bar ul .active::before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: #1877f2;
+}
+
+.profile-nav-bar ul .active a {
+  color: #1877f2;
+}
+/*# sourceMappingURL=Profile.module.css.map */
