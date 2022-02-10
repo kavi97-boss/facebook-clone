@@ -1,10 +1,19 @@
+import { useRef } from 'react';
+import DetailsLeft from '../../components/profile/DetailsLeft';
+import DetailsRight from '../../components/profile/DetailsRight';
 import ProfileLayout from '../../components/profile/profile.layout';
 
-function Profile({}) {
+function Profile() {
+    const leftRef = useRef();
+
+    console.log(leftRef.current);
+
     return (
         <ProfileLayout>
             <div className="profile-body">
-                <h1>Posts page</h1>
+                <DetailsLeft refff={leftRef} />
+                {/* my posts */}
+                <DetailsRight />
             </div>
         </ProfileLayout>
     );

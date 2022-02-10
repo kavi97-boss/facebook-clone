@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("./Profile.module.css");
+@import url("./PostBox.module.css");
 * {
   padding: 0;
   margin: 0;
@@ -13,7 +14,7 @@
   min-height: 100vh;
 }
 
-.inner-home {
+.container .inner-home {
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -21,14 +22,7 @@
   display: flex;
 }
 
-.left,
-.right {
-  width: 50%;
-  height: 100vh;
-  padding: 0 5vw;
-}
-
-.left {
+.container .inner-home .left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,34 +33,40 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 50%;
+  height: 100vh;
+  padding: 0 5vw;
 }
 
-.left h1 {
+.container .inner-home .left h1 {
   color: #1877f2;
   font-size: 7vh;
   font-weight: 500;
   margin: 2vh 0;
 }
 
-.left h3 {
+.container .inner-home .left h3 {
   font-size: 2vh;
   font-weight: 400;
 }
 
-.left .inner {
+.container .inner-home .left .inner {
   width: 60%;
 }
 
-.right {
+.container .inner-home .right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 50%;
+  height: 100vh;
+  padding: 0 5vw;
 }
 
-.right .inner-win {
+.container .inner-home .right .inner-win {
   width: 380px;
   min-height: 45vh;
   border-radius: 20px;
@@ -75,17 +75,17 @@
   padding: 4vh 1vw;
 }
 
-.right .inner-win h2 {
+.container .inner-home .right .inner-win h2 {
   width: 100%;
   text-align: center;
   font-size: 4vh;
 }
 
-.right .inner-win form {
+.container .inner-home .right .inner-win form {
   width: 100%;
 }
 
-.right .inner-win form h4 {
+.container .inner-home .right .inner-win form h4 {
   width: 100%;
   text-align: center;
   margin: 2vh 0;

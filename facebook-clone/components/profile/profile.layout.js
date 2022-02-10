@@ -1,8 +1,11 @@
+import MainNav from '../MainNav';
 import NavBar from './NavBar';
+import CopyRightIcon from '@material-ui/icons/Copyright';
 
 function ProfileLayout({ children }) {
     return (
         <div className="profile-page">
+            <MainNav />
             <div className="header">
                 <div className="inner">
                     <div
@@ -29,6 +32,13 @@ function ProfileLayout({ children }) {
             </div>
             <div className="body">
                 <div className="inner">{children}</div>
+            </div>
+            <div className="footer">
+                <span>
+                    <p>Copyright</p>
+                    <CopyRightIcon />
+                    <p>2022 All Rights Reserved</p>
+                </span>
             </div>
         </div>
     );

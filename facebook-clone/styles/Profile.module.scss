@@ -4,11 +4,13 @@ $headerHeight: 650px;
 body {
     --bg-color: rgb(255, 255, 255);
     --txt-color: rgb(0, 0, 0);
+    --theme-color: #1877f2;
 }
 
 .profile-page {
+    padding-top: 7vh;
     width: 100%;
-    min-height: 100vh;
+    height: auto !important;
     background-color: var(--bg-color);
     * {
         color: var(--txt-color);
@@ -18,6 +20,7 @@ body {
         height: $headerHeight;
         display: flex;
         justify-content: center;
+        background-color: rgba(0, 0, 0, 0.005);
         .inner {
             max-width: $innerWidth;
             width: $innerWidth;
@@ -54,8 +57,8 @@ body {
     }
     .body {
         width: 100%;
-        min-height: 100vh;
-        height: 100vh;
+        min-height: 55vh;
+        // height: 55vh;
         display: flex;
         justify-content: center;
         .inner {
@@ -70,6 +73,7 @@ body {
 .profile-nav-bar {
     width: 100%;
     height: 50px;
+    padding: 0 15px;
     ul {
         display: flex;
         list-style: none;
@@ -100,6 +104,153 @@ body {
             a {
                 color: $activeNavColor;
             }
+        }
+    }
+}
+.main-nav-bar {
+    width: 100%;
+    height: 7vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-color);
+    box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.15);
+    z-index: 99999;
+}
+.profile-body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    .left {
+        width: 35%;
+        height: auto;
+        padding-top: 15px;
+        height: max-content;
+    }
+    .right {
+        width: calc(65% - 15px);
+        height: auto;
+        padding-top: 15px;
+    }
+}
+
+.post-box {
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.005);
+    box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.15);
+    margin-bottom: 15px;
+    padding: 15px;
+    .details-line {
+        display: flex;
+        align-items: center;
+        margin: 1.5vh 0;
+        h3 {
+            margin-left: 10px;
+            font-weight: 400;
+            font-size: 1.8vh;
+        }
+    }
+    .topic-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1.5vh 0;
+        a {
+            color: #1877f2 !important;
+            text-decoration: none;
+        }
+    }
+    .image-grid {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        border-radius: 20px;
+        overflow: hidden;
+        .image {
+            width: 32%;
+            height: 120px;
+            background-color: rgba(0, 0, 0, 0.05);
+            margin: 2px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+    .friends-grid {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        .friend {
+            width: 32%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 10px;
+            cursor: pointer;
+            .image {
+                width: 95%;
+                height: 120px;
+                background-color: rgb(216, 216, 216);
+                border-radius: 10px;
+                background-position: center center;
+                background-size: cover;
+                box-shadow: 1px 1px 2px 1px rgb(243, 243, 243);
+            }
+            p {
+                width: 95%;
+                text-align: left;
+                padding-left: 5px;
+                padding-top: 5px;
+            }
+        }
+    }
+}
+.bg-ash {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+.my-1 {
+    margin-top: 1vh !important;
+    margin-bottom: 1vh !important;
+}
+.my-2 {
+    margin-top: 2vh !important;
+    margin-bottom: 2vh !important;
+}
+
+.mt-1 {
+    margin-top: 1vh !important;
+}
+
+.mt-2 {
+    margin-top: 2vh !important;
+}
+
+.footer {
+    width: 100%;
+    height: 30px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-color);
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+        display: flex;
+        align-items: center;
+        * {
+            font-size: 15px;
+        }
+        p {
+            margin: 5px;
+        }
+        svg {
+            font-size: 20px;
         }
     }
 }

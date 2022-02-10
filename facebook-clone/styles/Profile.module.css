@@ -1,11 +1,13 @@
 body {
   --bg-color: rgb(255, 255, 255);
   --txt-color: rgb(0, 0, 0);
+  --theme-color: #1877f2;
 }
 
 .profile-page {
+  padding-top: 7vh;
   width: 100%;
-  min-height: 100vh;
+  height: auto !important;
   background-color: var(--bg-color);
 }
 
@@ -22,6 +24,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: rgba(0, 0, 0, 0.005);
 }
 
 .profile-page .header .inner {
@@ -69,8 +72,7 @@ body {
 
 .profile-page .body {
   width: 100%;
-  min-height: 100vh;
-  height: 100vh;
+  min-height: 55vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,6 +91,7 @@ body {
 .profile-nav-bar {
   width: 100%;
   height: 50px;
+  padding: 0 15px;
 }
 
 .profile-nav-bar ul {
@@ -127,5 +130,220 @@ body {
 
 .profile-nav-bar ul .active a {
   color: #1877f2;
+}
+
+.main-nav-bar {
+  width: 100%;
+  height: 7vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--bg-color);
+  -webkit-box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.15);
+  z-index: 99999;
+}
+
+.profile-body {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile-body .left {
+  width: 35%;
+  height: auto;
+  padding-top: 15px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.profile-body .right {
+  width: calc(65% - 15px);
+  height: auto;
+  padding-top: 15px;
+}
+
+.post-box {
+  position: relative;
+  width: 100%;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.005);
+  -webkit-box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.post-box .details-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.5vh 0;
+}
+
+.post-box .details-line h3 {
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 1.8vh;
+}
+
+.post-box .topic-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.5vh 0;
+}
+
+.post-box .topic-line a {
+  color: #1877f2 !important;
+  text-decoration: none;
+}
+
+.post-box .image-grid {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.post-box .image-grid .image {
+  width: 32%;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin: 2px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+}
+
+.post-box .friends-grid {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.post-box .friends-grid .friend {
+  width: 32%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.post-box .friends-grid .friend .image {
+  width: 95%;
+  height: 120px;
+  background-color: #d8d8d8;
+  border-radius: 10px;
+  background-position: center center;
+  background-size: cover;
+  -webkit-box-shadow: 1px 1px 2px 1px #f3f3f3;
+          box-shadow: 1px 1px 2px 1px #f3f3f3;
+}
+
+.post-box .friends-grid .friend p {
+  width: 95%;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.bg-ash {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.my-1 {
+  margin-top: 1vh !important;
+  margin-bottom: 1vh !important;
+}
+
+.my-2 {
+  margin-top: 2vh !important;
+  margin-bottom: 2vh !important;
+}
+
+.mt-1 {
+  margin-top: 1vh !important;
+}
+
+.mt-2 {
+  margin-top: 2vh !important;
+}
+
+.footer {
+  width: 100%;
+  height: 30px;
+  -webkit-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-color);
+  margin-top: 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer span * {
+  font-size: 15px;
+}
+
+.footer span p {
+  margin: 5px;
+}
+
+.footer span svg {
+  font-size: 20px;
 }
 /*# sourceMappingURL=Profile.module.css.map */

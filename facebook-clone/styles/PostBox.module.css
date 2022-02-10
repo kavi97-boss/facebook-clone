@@ -1,0 +1,81 @@
+.post-box {
+  position: relative;
+}
+
+.post-box .post-head-line {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.post-box .post-head-line .head-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #c5c5c5;
+  margin-right: 10px;
+}
+
+.post-box .post-head-line .head-name-and-time a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.post-box .post-head-line .head-name-and-time p {
+  font-size: 14px;
+}
+
+.post-box .post-image {
+  position: relative;
+  left: -15px;
+  width: calc(100% + 30px);
+  height: 550px;
+  background-color: #dddddd;
+}
+
+.post-box .likes-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post-box .likes-line p {
+  padding-left: 10px;
+}
+
+.post-box .likes-line .like-round {
+  width: 20px;
+  height: 20px;
+}
+
+.post-box .likes-line .like-round svg {
+  background-color: var(--theme-color);
+  fill: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.post-box .reactions-comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 5px 0;
+}
+
+.post-box .reactions-comments svg {
+  fill: var(--txt-color);
+}
+
+.post-box .reactions-comments .liked {
+  fill: var(--theme-color);
+}
+/*# sourceMappingURL=PostBox.module.css.map */
