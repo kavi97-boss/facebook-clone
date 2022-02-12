@@ -6,7 +6,10 @@ function CreatePostBox() {
         <Box>
             <div className="create-post-header">
                 <div className="profile-img"></div>
-                <textarea placeholder="What's on your mind, Moriaty?"></textarea>
+                <textarea
+                    placeholder="What's on your mind, Moriaty?"
+                    rows="3"
+                ></textarea>
             </div>
             <div className="line"></div>
             <Button fullWidth className="post-btn">

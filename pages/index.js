@@ -12,6 +12,7 @@ function HomePage() {
                 <div className="inner">
                     <CreatePostBox />
                     <PostBox />
+                    <PostBox />
                 </div>
             </div>
             <MainFooter />
