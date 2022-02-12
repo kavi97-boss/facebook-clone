@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.post-box a {
+  color: black;
+}
+
 .post-box .post-head-line {
   width: 100%;
   display: -webkit-box;
@@ -231,5 +235,47 @@
 
 .all-friends-grid .friend-outer .friend h3 {
   margin-left: 20px;
+}
+
+.create-post-header {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.create-post-header .profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #c5c5c5;
+}
+
+.create-post-header textarea {
+  width: calc(100% - 65px);
+  background-color: whitesmoke;
+  border: none;
+  outline: none;
+  resize: vertical;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #ebebeb;
+  margin: 1.5vh 0;
+}
+
+.post-btn {
+  background-color: #f0f0f0 !important;
+  color: black !important;
+  font-weight: 600 !important;
 }
 /*# sourceMappingURL=PostBox.module.css.map */

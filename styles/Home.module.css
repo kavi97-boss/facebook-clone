@@ -1,1 +1,11 @@
-/* No CSS *//*# sourceMappingURL=Home.module.css.map */
+.inner-home-window {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.inner-home-window .inner {
+  width: var(--midleButtonsWidth);
+  padding-top: calc(7vh + 15px);
+  margin: 0 calc(50% - (var(--midleButtonsWidth) / 2));
+}
+/*# sourceMappingURL=Home.module.css.map */

@@ -6,6 +6,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    --bg-color: rgb(255, 255, 255);
+    --txt-color: rgb(0, 0, 0);
+    --theme-color: #1877f2;
+    --midleButtonsWidth: 40vw;
+    --notificationWidth: 350px;
+}
 .container {
     width: 100%;
     min-height: 100vh;
@@ -68,3 +75,4 @@
 @import url('./Profile.module.css');
 @import url('./PostBox.module.css');
 @import url('./MainNav.module.css');
+@import url('./Home.module.css');
