@@ -11,6 +11,10 @@
           justify-content: space-between;
 }
 
+.main-nav-bar * {
+  color: black;
+}
+
 .main-nav-bar .left-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,7 +69,7 @@
   border: none;
   outline: none;
   background-color: rgba(0, 0, 0, 0.055);
-  padding-left: 35px;
+  padding-left: 40px;
   font-size: 16px;
 }
 
@@ -88,7 +92,7 @@
 }
 
 .main-nav-bar .middle-section svg {
-  font-size: 3vh;
+  font-size: 3.2vh;
 }
 
 .main-nav-bar .middle-section .active-in-home {
@@ -216,6 +220,7 @@
 .main-nav-bar .profile-pic-btn .profile-pic h3 {
   margin-left: 5px;
   text-transform: capitalize !important;
+  font-weight: 500;
 }
 
 .main-nav-bar .logout-btn {

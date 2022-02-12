@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
-import { Button } from '@material-ui/core';
-import SearchIcon from '@material-ui/icons/Search';
+import { Button } from '@mui/material';
+import SearchIcon from '@mui/icons-material/Search';
 import LogoutIcon from '@mui/icons-material/Logout';
 import HomeIcon from '@mui/icons-material/Home';
 import FriendsIcon from '@mui/icons-material/People';

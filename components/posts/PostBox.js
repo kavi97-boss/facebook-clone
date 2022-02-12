@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import Box from './Box';
-import LikeIcon from '@material-ui/icons/ThumbUp';
-import LikeBtnIcon from '@material-ui/icons/ThumbUpOutlined';
-import CommentIcon from '@material-ui/icons/ChatBubbleOutline';
-import RocketIcon from '@material-ui/icons/Send';
-import Button from '@material-ui/core/Button';
+import LikeIcon from '@mui/icons-material/ThumbUp';
+import LikeBtnIcon from '@mui/icons-material/ThumbUpOutlined';
+import CommentIcon from '@mui/icons-material/ChatBubbleOutline';
+import RocketIcon from '@mui/icons-material/Send';
+import Button from '@mui/material/Button';
 import { useState } from 'react';
 
 function PostBox() {

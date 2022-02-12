@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Box({ children }) {
     return <div className="post-box">{children}</div>;
 }

@@ -1,6 +1,6 @@
 import MainNav from '../MainNav';
 import NavBar from './NavBar';
-import CopyRightIcon from '@material-ui/icons/Copyright';
+import CopyRightIcon from '@mui/icons-material/Copyright';
 
 export function MainFooter() {
     return (

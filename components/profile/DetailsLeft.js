@@ -1,9 +1,9 @@
 import Box from '../../components/posts/Box';
-import Button from '@material-ui/core/Button';
-import SchoolIcon from '@material-ui/icons/School';
-import TimeIcon from '@material-ui/icons/AccessTime';
-import HeartIcon from '@material-ui/icons/Favorite';
-import LocationIcon from '@material-ui/icons/LocationOn';
+import Button from '@mui/material/Button';
+import SchoolIcon from '@mui/icons-material/School';
+import TimeIcon from '@mui/icons-material/AccessTime';
+import HeartIcon from '@mui/icons-material/Favorite';
+import LocationIcon from '@mui/icons-material/LocationOn';
 import Link from 'next/link';
 
 function DetailsLeft({ refff }) {

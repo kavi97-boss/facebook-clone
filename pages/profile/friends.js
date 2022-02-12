@@ -1,7 +1,7 @@
 import ProfileLayout from '../../components/profile/profile.layout';
-import SearchIcon from '@material-ui/icons/Search';
+import SearchIcon from '@mui/icons-material/Search';
 import Box from '../../components/posts/Box';
-import Button from '@material-ui/core/Button';
+import Button from '@mui/material/Button';
 import Link from 'next/link';
 
 function ProfileFriends() {
