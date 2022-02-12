@@ -1,0 +1,56 @@
+{
+    "name":"my name",
+    "age":24,
+    "marital-staus":"single",
+    "school":"wrc",
+    "joined":"2022/02/12",
+    "from":"kurunegala",
+    "profile-pic":[
+        {
+            "_id":"jaq234ur3nuewry4",
+            "path":"path to image",
+            "time":"2022/02/12",
+            "current-profile-pic":true
+        },
+        {
+            "_id":"jaq2356sd62ewry4",
+            "path":"path to image",
+            "time":"2022/02/12",
+            "current-profile-pic":false
+        }
+    ],
+    "profile-cover":[
+        {
+            "_id":"jhuf7sur3nuewry4",
+            "path":"path to image",
+            "time":"2022/02/12",
+            "current-profile-cover":true
+        },
+        {
+            "_id":"jhuf7sur3n345sy4",
+            "path":"path to image",
+            "time":"2022/02/12",
+            "current-profile-cover":false
+        }
+    ],
+    "posts":[
+        {
+            "_id":"ddei8wd8743ujv",
+            "time":"2022/02/12 15:55:10"
+        },
+        {
+            "_id":"ddei8wd8743ujv",
+            "time":"2022/02/12 15:58:11"
+        }
+    ],
+    "friends":[
+        {
+            "_id":"ddei8wd8743ujv",
+            "time":"2022/02/12 15:55:10"
+        },
+        {
+            "_id":"ddei8wd8743ujv",
+            "time":"2022/02/12 15:58:11"
+        }
+    ]
+}

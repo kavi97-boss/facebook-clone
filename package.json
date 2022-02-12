@@ -6,11 +6,15 @@
     "build": "next build",
     "start": "next start -p $PORT",
     "lint": "next lint",
-    "heroku-postbuild":"npm run build"
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
+    "@mui/icons-material": "^5.4.1",
+    "@mui/material": "^5.4.1",
     "next": "12.0.10",
     "react": "17.0.2",
     "react-dom": "17.0.2"

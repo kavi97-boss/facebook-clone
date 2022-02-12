@@ -3,6 +3,7 @@ import Box from './Box';
 import LikeIcon from '@material-ui/icons/ThumbUp';
 import LikeBtnIcon from '@material-ui/icons/ThumbUpOutlined';
 import CommentIcon from '@material-ui/icons/ChatBubbleOutline';
+import RocketIcon from '@material-ui/icons/Send';
 import Button from '@material-ui/core/Button';
 import { useState } from 'react';
 
@@ -24,6 +25,9 @@ function PostBox() {
                     <p>February 8 at 9:04 AM</p>
                 </div>
             </div>
+            <div className="post-text">
+                <p>This is post text something</p>
+            </div>
             <div className="post-image"></div>
             <div className="likes-line">
                 <div className="like-round">
@@ -39,7 +43,12 @@ function PostBox() {
                     <CommentIcon />
                 </Button>
             </div>
-            <div className="type-comment"></div>
+            <div className="type-comment">
+                <input type="text" placeholder="Write a comment..." />
+                <Button>
+                    <RocketIcon />
+                </Button>
+            </div>
         </Box>
     );
 }

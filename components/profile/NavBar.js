@@ -17,13 +17,13 @@ function NavBar() {
                 >
                     <Link href="/profile">Posts</Link>
                 </li>
-                <li
+                {/* <li
                     className={
                         router.pathname === '/profile/about' ? 'active' : ''
                     }
                 >
                     <Link href="/profile/about">About</Link>
-                </li>
+                </li> */}
                 <li
                     className={
                         router.pathname === '/profile/friends' ? 'active' : ''

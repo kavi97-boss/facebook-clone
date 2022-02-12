@@ -1,0 +1,74 @@
+.main-nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-nav-bar .left-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-nav-bar .logo {
+  width: 5vh;
+  height: 5vh;
+  background-color: var(--theme-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 4vh;
+  overflow: hidden;
+}
+
+.main-nav-bar .logo span {
+  font-size: 5vh;
+  color: white;
+}
+
+.main-nav-bar .search-panel {
+  position: relative;
+  margin: 0 1vw;
+}
+
+.main-nav-bar .search-panel .search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 25px;
+  fill: gray;
+}
+
+.main-nav-bar .search-panel input {
+  width: 300px;
+  height: 45px;
+  border-radius: 22px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.055);
+  padding-left: 35px;
+  font-size: 16px;
+}
+
+.main-nav-bar .logout-btn svg {
+  fill: red;
+}
+/*# sourceMappingURL=MainNav.module.css.map */
