@@ -215,6 +215,8 @@
   height: 40px;
   background-color: #8f8f8f;
   border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
 }
 
 .main-nav-bar .profile-pic-btn .profile-pic h3 {

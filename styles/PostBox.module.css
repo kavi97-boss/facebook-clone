@@ -20,6 +20,8 @@
   border-radius: 50%;
   background-color: #c5c5c5;
   margin-right: 10px;
+  background-position: center center;
+  background-size: cover;
 }
 
 .post-box .post-head-line .head-name-and-time a {
@@ -277,5 +279,10 @@
   background-color: #f0f0f0 !important;
   color: black !important;
   font-weight: 600 !important;
+}
+
+.post-comment-btn {
+  border-radius: 2vh;
+  margin-left: 5px;
 }
 /*# sourceMappingURL=PostBox.module.css.map */

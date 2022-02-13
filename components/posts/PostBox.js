@@ -45,7 +45,7 @@ function PostBox() {
             </div>
             <div className="type-comment">
                 <input type="text" placeholder="Write a comment..." />
-                <Button>
+                <Button className="post-comment-btn">
                     <RocketIcon />
                 </Button>
             </div>

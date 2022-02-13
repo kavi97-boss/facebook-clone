@@ -3,6 +3,7 @@
 @import url("./PostBox.module.css");
 @import url("./MainNav.module.css");
 @import url("./Home.module.css");
+@import url("./ChatList.module.css");
 * {
   padding: 0;
   margin: 0;
@@ -11,11 +12,16 @@
   font-family: 'Roboto', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  overflow-x: hidden;
   --bg-color: rgb(255, 255, 255);
   --txt-color: rgb(0, 0, 0);
   --theme-color: #1877f2;
-  --midleButtonsWidth: 40vw;
+  --midleButtonsWidth: 32vw;
   --notificationWidth: 350px;
 }
 

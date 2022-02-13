@@ -12,6 +12,8 @@
             border-radius: 50%;
             background-color: rgb(197, 197, 197);
             margin-right: 10px;
+            background-position: center center;
+            background-size: cover;
         }
         .head-name-and-time {
             a {
@@ -207,4 +209,8 @@
     background-color: rgb(240, 240, 240) !important;
     color: rgb(0, 0, 0) !important;
     font-weight: 600 !important;
+}
+.post-comment-btn {
+    border-radius: 2vh;
+    margin-left: 5px;
 }
