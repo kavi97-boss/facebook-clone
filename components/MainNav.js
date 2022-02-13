@@ -6,8 +6,42 @@ import HomeIcon from '@mui/icons-material/Home';
 import FriendsIcon from '@mui/icons-material/People';
 import NotificationIcon from '@mui/icons-material/Notifications';
 import ImageIcon from '@mui/icons-material/CropOriginal';
+import CloseIcon from '@mui/icons-material/Close';
+import MinimizeIcon from '@mui/icons-material/Minimize';
 import { useState } from 'react';
 import NotificationWin from './NotificationWin';
+
+function PopUpChatBox({ posRight = 100 }) {
+    return (
+        <div className="popuo-chat-box" style={{ right: `${posRight}px` }}>
+            <div className="chat-box-header">
+                <div className="img"></div>
+                <h4>Profile name</h4>
+                <Button className="header-btn">
+                    <MinimizeIcon />
+                </Button>
+                <Button className="header-btn">
+                    <CloseIcon />
+                </Button>
+            </div>
+            <h1>chat box</h1>
+        </div>
+    );
+}
+
+function MinimizedChat({ posBottom = 10 }) {
+    const closeMinimizedChat = () => {
+        console.log('close chat');
+    };
+    return (
+        <div className="minimized-chat" style={{ bottom: posBottom }}>
+            <div className="minimized-bg"></div>
+            <div className="close-btn" onClick={closeMinimizedChat}>
+                <CloseIcon />
+            </div>
+        </div>
+    );
+}
 
 function MainNav() {
     const router = useRouter();
@@ -113,6 +147,14 @@ function MainNav() {
                     </Button>
                 </div>
             </div>
+            {/* bottom chat boxes */}
+            <PopUpChatBox />
+            <PopUpChatBox posRight={460} />
+            <PopUpChatBox posRight={820} />
+            {/* minimized chats */}
+            <MinimizedChat />
+            <MinimizedChat posBottom={100} />
+            <MinimizedChat posBottom={190} />
         </>
     );
 }
